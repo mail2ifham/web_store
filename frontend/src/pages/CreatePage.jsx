@@ -1,5 +1,7 @@
+import React, { useState } from "react";
 import { useProductStore } from "@/store/products";
 import { useColorModeValue } from "../components/ui/color-mode";
+import { Toaster, toaster } from "../components/ui/toaster";
 import {
   Box,
   Button,
@@ -8,8 +10,6 @@ import {
   Input,
   VStack,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
-import { Toaster, toaster } from "../components/ui/toaster";
 
 const CreatePage = () => {
   const [newProduct, setNewProduct] = useState({

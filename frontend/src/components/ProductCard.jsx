@@ -1,3 +1,8 @@
+import React, { useState } from "react";
+import { FaEdit, FaTrash } from "react-icons/fa";
+import { useColorModeValue } from "./ui/color-mode";
+import { useProductStore } from "@/store/products";
+import { Toaster, toaster } from "./ui/toaster";
 import {
   Box,
   Button,
@@ -20,11 +25,6 @@ import {
   DialogRoot,
   DialogTitle,
 } from "./ui/dialog";
-import React, { useState } from "react";
-import { FaEdit, FaTrash } from "react-icons/fa";
-import { useColorModeValue } from "./ui/color-mode";
-import { useProductStore } from "@/store/products";
-import { Toaster, toaster } from "./ui/toaster";
 
 const ProductCard = ({ product }) => {
   const [updatedProduct, setUpdatedProduct] = useState(product);

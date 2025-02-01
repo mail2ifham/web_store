@@ -1,9 +1,3 @@
-import {
-  Container,
-  Flex,
-  HStack,
-  Text,
-} from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { IconButton } from "@chakra-ui/react";
@@ -11,6 +5,12 @@ import { FiPlusSquare } from "react-icons/fi";
 import { ColorModeButton } from "./ui/color-mode";
 import { CiPen } from "react-icons/ci";
 import { FaBookOpen } from "react-icons/fa";
+import {
+  Container,
+  Flex,
+  HStack,
+  Text,
+} from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
